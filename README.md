@@ -20,11 +20,13 @@ Collecting the highest quality prompts for Sora, providing creators, researchers
 
 ## Features
 
-- [x] Basic functionality implemented
-- [ ] Collecting the highest quality prompts for Sora
+- [x] Basic functionality implemented;
+- [ ] Collecting more high-quality prompts for Sora;
+- [ ] Optimize the search algorithm by using some open-source inverted index search engines;
+- [ ] Add hot words statistics
 - [ ] Customize modifications on satisfactory prompts using GPT integration.
 
-## Installation
+## Development
 
 ```bash
 npm i -g pnpm

@@ -1,75 +1,31 @@
-# Nuxt 3 Minimal Starter
+<div align="center">
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<a href="https://usesora.app" target="blank">
+  <img src="https://usesora.app/logobg.png" height="200px" alt="logo" style="border-radius: 20px"/>
+</a>
 
-## Setup
+# Use Sora
 
-Make sure to install the dependencies:
+[![Nuxt3](https://img.shields.io/badge/Nuxt3-00C58E?style=for-the-badge&logo=nuxt.js&logoColor=white)](https://nuxt.com/)
+[![Vuetify](https://img.shields.io/badge/Vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=white)](https://vuetifyjs.com/)
+[![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/license/mit/)
+
+
+Our platform is designed to provide creators, researchers, and technology enthusiasts with a central hub for sharing, exploring, and discovering the latest Sora video creations.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FJustin3go%2Fusesora)
+
+</div>
+
+
+## Features
+
+TODO: Add features
+
+## Installation
 
 ```bash
-# npm
-npm install
-
-# pnpm
+npm i -g pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+pnpm dev
+``` 

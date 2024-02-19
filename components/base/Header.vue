@@ -1,6 +1,6 @@
 <template>
 	<header>
-    <v-sheet class="px-4 d-flex justify-space-between" :height="60" width="100vw" border>
+    <v-sheet class="px-4 d-flex justify-space-between" :height="60" width="100%" border>
       <span class="text-h5 font-italic font-weight-thin d-flex align-center">
         <SvgPoint style="height: 40px; width: 40px"></SvgPoint>
         <span>Use Sora...</span>
@@ -32,6 +32,9 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+
+  width: 100vw;
+  min-width: 888px;
 }
 .header-placeholder {
   height: 60px;

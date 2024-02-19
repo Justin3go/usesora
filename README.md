@@ -10,17 +10,19 @@
 [![Vuetify](https://img.shields.io/badge/Vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=white)](https://vuetifyjs.com/)
 [![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/license/mit/)
 
-
 Collecting the highest quality prompts for Sora, providing creators, researchers, and technology enthusiasts with a tool for sharing, exploring, and discovering the latest Sora video creations.
+
+![demo](./images/demo.png)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FJustin3go%2Fusesora)
 
 </div>
 
-
 ## Features
 
-TODO: Add features
+- [x] Basic functionality implemented
+- [ ] Collecting the highest quality prompts for Sora
+- [ ] Customize modifications on satisfactory prompts using GPT integration.
 
 ## Installation
 
@@ -29,3 +31,11 @@ npm i -g pnpm
 pnpm install
 pnpm dev
 ``` 
+
+## How to Submit a Prompt
+
+1. Fork this repository.
+2. Add your prompt to [`server/data/soraList.ts`](./server/data/soraList.ts) following the historical format.
+3. Submit a PR (Pull Request).
+4. Wait for review.
+

@@ -9,8 +9,8 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', href: '/logo.png' }
       ],
       meta: [
-        { name: 'description', content: 'Our platform is designed to provide creators, researchers, and technology enthusiasts with a central hub for sharing, exploring, and discovering the latest Sora video creations.' },
-        { property: 'og:description', content: 'Our platform is designed to provide creators, researchers, and technology enthusiasts with a central hub for sharing, exploring, and discovering the latest Sora video creations.' },
+        { name: 'description', content: 'Collecting the highest quality prompts for Sora, providing creators, researchers, and technology enthusiasts with a tool for sharing, exploring, and discovering the latest Sora video creations.' },
+        { property: 'og:description', content: 'Collecting the highest quality prompts for Sora, providing creators, researchers, and technology enthusiasts with a tool for sharing, exploring, and discovering the latest Sora video creations.' },
         { property: 'og:title', content: 'UseSora' },
         { property: 'og:image', content: 'https://usesora.app/logobg.png' },
         { property: 'twitter:card', content: 'summary' },

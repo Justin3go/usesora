@@ -11,7 +11,7 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/license/mit/)
 
 
-Our platform is designed to provide creators, researchers, and technology enthusiasts with a central hub for sharing, exploring, and discovering the latest Sora video creations.
+Collecting the highest quality prompts for Sora, providing creators, researchers, and technology enthusiasts with a tool for sharing, exploring, and discovering the latest Sora video creations.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FJustin3go%2Fusesora)
 

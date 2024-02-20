@@ -16,7 +16,7 @@
 				v-model:expanded="expanded"
 				:headers="headers"
 				:items="data"
-				:search="search"
+
 				item-value="prompt"
 			>
 				<template v-slot:item.prompt="{ item }">
@@ -60,7 +60,7 @@ const headers = ref([
 	{ title: "Preview", sortable: false, key: "video" },
 ]);
 
-const { data } = await useFetch("/api/sora");
+const { data } = await useFetch("/api/sora", { query: { search } });
 </script>
 
 <style></style>

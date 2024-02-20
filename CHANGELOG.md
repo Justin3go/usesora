@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/Justin3go/usesora/compare/v1.4.0...v1.4.1) (2024-02-20)
+
+
+### Docs
+
+* update readme tasks ([80797e4](https://github.com/Justin3go/usesora/commit/80797e4ea1e6564a09ae131d3853c61467552da8))
+
 ## [1.4.0](https://github.com/Justin3go/usesora/compare/v1.3.0...v1.4.0) (2024-02-20)
 
 

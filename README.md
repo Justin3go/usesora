@@ -22,7 +22,7 @@ Collecting the highest quality prompts for Sora, providing creators, researchers
 
 - [x] Basic functionality implemented;
 - [ ] Collecting more high-quality prompts for Sora;
-- [ ] Optimize the search algorithm by using some open-source inverted index search engines;
+- [x] Optimize the search algorithm by using some open-source inverted index search engines;
 - [ ] Add hot words statistics
 - [ ] Customize modifications on satisfactory prompts using GPT integration.
 

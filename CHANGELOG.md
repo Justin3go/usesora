@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/Justin3go/usesora/compare/v1.2.0...v1.3.0) (2024-02-20)
+
+
+### Features
+
+* support flexsearch ([c3dd733](https://github.com/Justin3go/usesora/commit/c3dd733006ffcdad4d82d78f48926698d1a594e2))
+
+
+### Docs
+
+* update readme tasks ([5d1924c](https://github.com/Justin3go/usesora/commit/5d1924c2d1bd2318d34f32b3b1d5c0f6383fbc8a))
+
 ## [1.2.0](https://github.com/Justin3go/usesora/compare/v1.1.0...v1.2.0) (2024-02-20)
 
 

@@ -10,8 +10,8 @@
 					variant="outlined"
 					hide-details
 				></v-text-field>
-				<div class="d-flex justify-center mt-2">
-					<span v-for="word in topWords" class="mx-1" :key="word">
+				<div class="d-flex justify-center flex-wrap">
+					<span v-for="word in topWords" class="mx-1 mt-2" :key="word">
 						<v-btn
 							class="text-capitalize"
 							size="small"

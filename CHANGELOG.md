@@ -3,6 +3,11 @@
 ## [1.4.1](https://github.com/Justin3go/usesora/compare/v1.4.0...v1.4.1) (2024-02-20)
 
 
+### Bug Fixes
+
+* Update List.vue to display topWords with proper styling ([062bc7f](https://github.com/Justin3go/usesora/commit/062bc7fd1ee749135f61536996209350fd5938eb))
+
+
 ### Docs
 
 * update readme tasks ([80797e4](https://github.com/Justin3go/usesora/commit/80797e4ea1e6564a09ae131d3853c61467552da8))

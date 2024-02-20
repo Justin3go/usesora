@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/Justin3go/usesora/compare/v1.3.0...v1.4.0) (2024-02-20)
+
+
+### Features
+
+* support hot words tag ([7fbe055](https://github.com/Justin3go/usesora/commit/7fbe05536f9c687f768aee8e46af3eb257c87b0e))
+
 ## [1.3.0](https://github.com/Justin3go/usesora/compare/v1.2.0...v1.3.0) (2024-02-20)
 
 

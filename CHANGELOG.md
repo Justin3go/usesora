@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/Justin3go/usesora/compare/v1.1.0...v1.2.0) (2024-02-20)
+
+
+### Features
+
+* add submit button ([5c9580a](https://github.com/Justin3go/usesora/commit/5c9580a04fdd5de49abcf1deef4bab36ff8e64e6))
+* Update Footer and List components, and adjust page layout ([940aa36](https://github.com/Justin3go/usesora/commit/940aa36f837c55122ed1e2f10837c46e8ed11630))
+
 ## [1.1.0](https://github.com/Justin3go/usesora/compare/v1.0.0...v1.1.0) (2024-02-20)
 
 

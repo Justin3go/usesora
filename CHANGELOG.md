@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Justin3go/usesora/compare/v1.0.0...v1.1.0) (2024-02-20)
+
+
+### Features
+
+* add more sora video ([eb82647](https://github.com/Justin3go/usesora/commit/eb826470455fbab1da5c1a26054786edb461042e))
+
 ## 1.0.0 (2024-02-19)
 
 

@@ -56,7 +56,7 @@ header {
 	z-index: 1000;
 
 	width: 100vw;
-	min-width: 888px;
+	min-width: 400px;
 }
 .header-placeholder {
 	height: 60px;

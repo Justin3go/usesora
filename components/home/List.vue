@@ -10,6 +10,18 @@
 					variant="outlined"
 					hide-details
 				></v-text-field>
+				<div class="d-flex justify-center mt-2">
+					<span v-for="word in topWords" class="mx-1" :key="word">
+						<v-btn
+							class="text-capitalize"
+							size="small"
+							variant="tonal"
+							@click="search = word"
+						>
+							{{ word }}
+						</v-btn>
+					</span>
+				</div>
 			</template>
 
 			<v-data-table
@@ -61,6 +73,8 @@ const headers = ref([
 ]);
 
 const { data } = await useFetch("/api/sora", { query: { search } });
+const { data: topWords } = await useFetch("/api/topWords");
+
 </script>
 
 <style></style>

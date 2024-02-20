@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="list-container">
 		<v-card >
 			<template v-slot:text>
 				<v-text-field

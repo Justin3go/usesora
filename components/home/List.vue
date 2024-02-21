@@ -30,6 +30,8 @@
 				:headers="headers"
 				:items="dataList"
 				item-value="prompt"
+				:loading="pending"
+				loading-text="Loading... Please wait"
 			>
 				<template v-slot:item.prompt="{ item }">
 					<div>
@@ -100,7 +102,7 @@ const headers = ref([
 	{ title: "Preview", sortable: false, key: "video" },
 ]);
 
-const { data: soraData }: { data: any } = await useFetch("/api/sora", {
+const { data: soraData, pending }: { data: any, pending: any } = await useFetch("/api/sora", {
 	query: { search },
 });
 const { data: topWords } = await useFetch("/api/topWords");

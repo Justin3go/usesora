@@ -16,10 +16,13 @@
 				>Contract Me</v-btn
 			>
 			<a
+				class="ml-6"
 				href="https://www.producthunt.com/posts/usesora?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-usesora"
 				target="_blank"
 				><img
-					:src="`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=440546&theme=${themeCookie || 'light'}`"
+					:src="`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=440546&theme=${
+						themeCookie || 'light'
+					}`"
 					alt="UseSora - Collecting&#0032;the&#0032;highest&#0032;quality&#0032;prompts&#0032;for&#0032;Sora | Product Hunt"
 					style="width: 180px; height: 40px"
 			/></a>
@@ -35,7 +38,7 @@
 </template>
 
 <script lang="ts" setup>
-const themeCookie = useCookie('theme')
+const themeCookie = useCookie("theme");
 
 function backToTop() {
 	window.scrollTo({ top: 0, behavior: "smooth" });

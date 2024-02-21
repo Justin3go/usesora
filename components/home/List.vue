@@ -64,16 +64,16 @@
 						<v-checkbox
 							v-model="item.star"
 							:messages="item.star ? 'starred' : 'star it'"
-							false-icon="mdi-star-outline"
-							true-icon="mdi-star"
+							false-icon="mdi-star-plus-outline"
+							true-icon="mdi-star-check"
 							@update:modelValue="() => starItem(item)"
 						></v-checkbox>
 						<template #placeholder>
 							<v-checkbox
 								:model-value="false"
 								messages="star it"
-								false-icon="mdi-star-outline"
-								true-icon="mdi-star"
+								false-icon="mdi-star-plus-outline"
+								true-icon="mdi-star-check"
 							></v-checkbox>
 						</template>
 					</ClientOnly>

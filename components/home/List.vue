@@ -8,6 +8,7 @@
 					prepend-inner-icon="mdi-magnify"
 					single-line
 					variant="outlined"
+					clearable
 					hide-details
 				></v-text-field>
 				<div class="d-flex justify-center flex-wrap">

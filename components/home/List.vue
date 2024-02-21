@@ -1,6 +1,6 @@
 <template>
 	<div class="list-container">
-		<v-card >
+		<v-card>
 			<template v-slot:text>
 				<v-text-field
 					v-model="search"
@@ -27,8 +27,7 @@
 			<v-data-table
 				v-model:expanded="expanded"
 				:headers="headers"
-				:items="data"
-
+				:items="dataList"
 				item-value="prompt"
 			>
 				<template v-slot:item.prompt="{ item }">
@@ -37,7 +36,15 @@
 					</div>
 				</template>
 				<template v-slot:item.homepage="{ item }">
-					<v-btn class="text-capitalize" color="primary" variant="text" :href="item.homepage" target="_blank"> Go to Page </v-btn>
+					<v-btn
+						class="text-capitalize"
+						color="primary"
+						variant="text"
+						:href="item.homepage"
+						target="_blank"
+					>
+						Go to Page
+					</v-btn>
 				</template>
 				<template v-slot:item.video="{ item }">
 					<v-card class="my-2" elevation="2" rounded>
@@ -51,6 +58,25 @@
 							allowfullscreen
 						></iframe>
 					</v-card>
+				</template>
+				<template v-slot:item.star="{ item }">
+					<ClientOnly>
+						<v-checkbox
+							v-model="item.star"
+							:messages="item.star ? 'starred' : 'star it'"
+							false-icon="mdi-star-plus-outline"
+							true-icon="mdi-star-check"
+							@update:modelValue="() => starItem(item)"
+						></v-checkbox>
+						<template #placeholder>
+							<v-checkbox
+								:model-value="false"
+								messages="star it"
+								false-icon="mdi-star-plus-outline"
+								true-icon="mdi-star-check"
+							></v-checkbox>
+						</template>
+					</ClientOnly>
 				</template>
 			</v-data-table>
 		</v-card>
@@ -67,14 +93,35 @@ const headers = ref([
 		key: "prompt",
 	},
 	{ title: "Author", sortable: false, key: "author" },
-	{ title: "HomePage", sortable: false, align: "center",  key: "homepage" },
 	{ title: "Publish", width: "120px", key: "publish" },
+	{ title: "HomePage", sortable: false, align: "center", key: "homepage" },
+	{ title: "Star", key: "star" },
 	{ title: "Preview", sortable: false, key: "video" },
 ]);
 
-const { data } = await useFetch("/api/sora", { query: { search } });
+const { data: soraData }: { data: any } = await useFetch("/api/sora", {
+	query: { search },
+});
 const { data: topWords } = await useFetch("/api/topWords");
 
+const store = useMyFavoritesListStore();
+const dataList = computed(() => {
+	const favoriteSet = new Set(
+		store.favoritesList.map((item: any) => item.prompt)
+	);
+	return soraData?.value?.map((item: any) => ({
+		...item,
+		star: favoriteSet.has(item.prompt),
+	}));
+});
+
+function starItem(item: any) {
+	if (item.star) {
+		store.addFavorite(item);
+	} else {
+		store.removeFavorite(item);
+	}
+}
 </script>
 
 <style></style>

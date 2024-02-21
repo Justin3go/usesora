@@ -13,7 +13,7 @@
 			<span class="d-flex align-center">
 				<v-btn
 					class="text-capitalize mr-4"
-          color="primary"
+					color="primary"
 					variant="tonal"
 					href="https://github.com/Justin3go/usesora/blob/master/server/data/soraList.ts"
 					target="_blank"

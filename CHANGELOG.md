@@ -1,5 +1,28 @@
 # Changelog
 
+## [1.5.0](https://github.com/Justin3go/usesora/compare/v1.4.1...v1.5.0) (2024-02-21)
+
+
+### Features
+
+* add star col to support favorite ([9be90de](https://github.com/Justin3go/usesora/commit/9be90decd7c7580afc932f848f14d37c5470dce1))
+* initial pinia ([548a177](https://github.com/Justin3go/usesora/commit/548a1776f256a7fbc5b0c6d2d88ea322c419d9ab))
+
+
+### Bug Fixes
+
+* Add clearable option to search input field ([20e6f74](https://github.com/Justin3go/usesora/commit/20e6f749d177573503e7ca24e58e44364dd06c69))
+* Add loading indicator to List.vue ([821584c](https://github.com/Justin3go/usesora/commit/821584ca0f8a7f1a4021b6c497cc13e41156dc7e))
+* Add true-icon to v-checkbox component ([03fdeee](https://github.com/Justin3go/usesora/commit/03fdeeeb279d52dbe049309512ffaa0ff3adf0d3))
+* Fix product hunt badge theme in Footer.vue ([9a0e582](https://github.com/Justin3go/usesora/commit/9a0e5829cc7de26f182c5c48139cf20b23d71b25))
+* Refactor List.vue component and add type annotations ([f49a506](https://github.com/Justin3go/usesora/commit/f49a506688d79a6245359c91d8cbdfa47d013bd4))
+* update margin in producthunt badge ([2efd7bf](https://github.com/Justin3go/usesora/commit/2efd7bf08bc84e2339cbe966c1f084769ac61418))
+
+
+### Docs
+
+* update readme tasks ([8b9327d](https://github.com/Justin3go/usesora/commit/8b9327d63b2a866d9ae7fce6cd2f9c6f8638c969))
+
 ## [1.4.1](https://github.com/Justin3go/usesora/compare/v1.4.0...v1.4.1) (2024-02-20)
 
 

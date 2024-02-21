@@ -102,17 +102,29 @@ const headers = ref([
 	{ title: "Preview", sortable: false, key: "video" },
 ]);
 
-const { data: soraData, pending }: { data: any, pending: any } = await useFetch("/api/sora", {
+interface IListItem {
+	prompt: string;
+	author: string;
+	homepage: string;
+	video: string;
+	publish: string;
+	star?: boolean;
+}
+
+interface ISoraData {
+	data: Ref<IListItem[]>;
+	pending: Ref<boolean>;
+}
+
+const { data: soraData, pending }: ISoraData = await useFetch("/api/sora", {
 	query: { search },
 });
 const { data: topWords } = await useFetch("/api/topWords");
 
 const store = useMyFavoritesListStore();
 const dataList = computed(() => {
-	const favoriteSet = new Set(
-		store.favoritesList.map((item: any) => item.prompt)
-	);
-	return soraData?.value?.map((item: any) => ({
+	const favoriteSet = new Set(store.favoritesList.map((item) => item.prompt));
+	return soraData?.value?.map((item) => ({
 		...item,
 		star: favoriteSet.has(item.prompt),
 	}));

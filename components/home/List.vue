@@ -73,6 +73,7 @@
 								:model-value="false"
 								messages="star it"
 								false-icon="mdi-star-outline"
+								true-icon="mdi-star"
 							></v-checkbox>
 						</template>
 					</ClientOnly>

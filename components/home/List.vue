@@ -29,9 +29,12 @@
 				v-model:expanded="expanded"
 				:headers="headers"
 				:items="dataList"
-				item-value="prompt"
 				:loading="pending"
+				:items-per-page="10"
+				:items-per-page-options="[5, 10, 20]"
+				item-value="prompt"
 				loading-text="Loading... Please wait"
+				@update:page="backToTop"
 			>
 				<template v-slot:item.prompt="{ item }">
 					<div>
@@ -136,6 +139,10 @@ function starItem(item: any) {
 	} else {
 		store.removeFavorite(item);
 	}
+}
+
+function backToTop() {
+	window.scrollTo({ top: 0 });
 }
 </script>
 

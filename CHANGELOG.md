@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.6.0](https://github.com/Justin3go/usesora/compare/v1.5.0...v1.6.0) (2024-02-22)
+
+
+### Features
+
+* Update SEO meta tags and remove unused code ([ad0dff7](https://github.com/Justin3go/usesora/commit/ad0dff735b362753dfb130840d76e49bae860669))
+
+
+### Bug Fixes
+
+* table headers type error ([06e3b8a](https://github.com/Justin3go/usesora/commit/06e3b8addb6c52b001dca8a533de697b3255f8d0))
+* update youtube preview links ([22fd03b](https://github.com/Justin3go/usesora/commit/22fd03b0115fae0428d0ba395838b89d5cc06864))
+
 ## [1.5.0](https://github.com/Justin3go/usesora/compare/v1.4.1...v1.5.0) (2024-02-21)
 
 

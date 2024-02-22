@@ -92,7 +92,15 @@
 <script lang="ts" setup>
 const expanded = ref([]);
 const search = ref("");
-const headers = ref([
+
+type THeaders = {
+    title: string;
+    align?: 'start' | 'center' | 'end';
+    key: string;
+    sortable?: boolean;
+    width?: string;
+};
+const headers: THeaders[] = [
 	{
 		title: "Prompt",
 		align: "start",
@@ -103,7 +111,7 @@ const headers = ref([
 	{ title: "HomePage", sortable: false, align: "center", key: "homepage" },
 	{ title: "Star", key: "star" },
 	{ title: "Preview", sortable: false, key: "video" },
-]);
+];
 
 interface IListItem {
 	prompt: string;

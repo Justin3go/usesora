@@ -20,6 +20,8 @@ Collecting the highest quality prompts for Sora, providing creators, researchers
 
 ## Features
 
+> (!important) Now, this project will pause the collection of related sora videos, waiting for the official release of sora in the future. Perhaps this project could add one or more prompts to a reference list, then generate the expected videos through GPT interactive Q&A. This could potentially save the number of times (time, money, etc.) users need to call sora for adjustments.
+
 - [x] Basic functionality implemented;
 - [ ] Collecting more high-quality prompts for Sora;
 - [x] Optimize the search algorithm by using some open-source inverted index search engines;
